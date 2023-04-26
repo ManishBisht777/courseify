@@ -1,3 +1,4 @@
+import { Footer } from "@/components/layout/Footer";
 import MainNav from "@/components/layout/MainNav";
 import { buttonVariants } from "@/components/ui/button";
 import { navbarConfig } from "@/config/navbar";
@@ -26,8 +27,7 @@ export default async function MarketingLayout({ children }: MarketingLayout) {
         </div>
       </header>
       <main className="flex-1">{children}</main>
-
-      <p>Footer</p>
+      <Footer />
     </div>
   );
 }

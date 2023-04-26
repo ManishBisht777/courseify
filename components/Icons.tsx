@@ -22,6 +22,7 @@ import {
   Trash,
   Twitter,
   User,
+  Star,
   X,
   type Icon as LucideIcon,
 } from "lucide-react";
@@ -30,6 +31,7 @@ export type Icon = LucideIcon;
 
 export const Icons = {
   logo: AlignCenterVertical,
+  star: Star,
   close: X,
   spinner: Loader2,
   chevronLeft: ChevronLeft,

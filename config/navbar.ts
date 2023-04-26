@@ -8,7 +8,7 @@ export const navbarConfig: NavbarConfig = {
     },
     {
       title: "Support",
-      href: "/Support",
+      href: "/support",
     },
     {
       title: "Blog",
@@ -16,11 +16,11 @@ export const navbarConfig: NavbarConfig = {
     },
     {
       title: "Courses",
-      href: "/Courses",
+      href: "/courses",
     },
     {
       title: "Documentation",
-      href: "/Docs",
+      href: "/docs",
     },
   ],
 };

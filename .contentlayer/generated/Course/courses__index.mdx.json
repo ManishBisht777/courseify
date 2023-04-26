@@ -1,0 +1,21 @@
+{
+  "title": "Documentation",
+  "description": "Welcome to the Taxonomy documentation.",
+  "published": true,
+  "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F9%2F99%2FUnofficial_JavaScript_logo_2.svg%2F512px-Unofficial_JavaScript_logo_2.svg.png&tbnid=vvy2E4gO7jtv2M&vet=12ahUKEwjRqryG9cf-AhUHJrcAHVTWDegQMygCegUIARDmAQ..i&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AUnofficial_JavaScript_logo_2.svg&docid=GB1wmVpYYA5T0M&w=512&h=512&q=javascript&ved=2ahUKEwjRqryG9cf-AhUHJrcAHVTWDegQMygCegUIARDmAQ",
+  "body": {
+    "raw": "\nThis is the documentation for the Taxonomy site.\n\nThis is an example of a doc site built using [ContentLayer](/docs/documentation/contentlayer) and MDX.\n",
+    "code": "var Component=(()=>{var d=Object.create;var a=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var h=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var u=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),F=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},r=(t,e,n,c)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of p(e))!f.call(t,i)&&i!==n&&a(t,i,{get:()=>e[i],enumerable:!(c=l(e,i))||c.enumerable});return t};var _=(t,e,n)=>(n=t!=null?d(h(t)):{},r(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),x=t=>r(a({},\"__esModule\",{value:!0}),t);var m=u((U,s)=>{s.exports=_jsx_runtime});var j={};F(j,{default:()=>A,frontmatter:()=>v});var o=_(m()),v={title:\"Documentation\",description:\"Welcome to the Taxonomy documentation.\",image:\"https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F9%2F99%2FUnofficial_JavaScript_logo_2.svg%2F512px-Unofficial_JavaScript_logo_2.svg.png&tbnid=vvy2E4gO7jtv2M&vet=12ahUKEwjRqryG9cf-AhUHJrcAHVTWDegQMygCegUIARDmAQ..i&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AUnofficial_JavaScript_logo_2.svg&docid=GB1wmVpYYA5T0M&w=512&h=512&q=javascript&ved=2ahUKEwjRqryG9cf-AhUHJrcAHVTWDegQMygCegUIARDmAQ\"};function g(t){let e=Object.assign({p:\"p\",a:\"a\"},t.components);return(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(e.p,{children:\"This is the documentation for the Taxonomy site.\"}),`\n`,(0,o.jsxs)(e.p,{children:[\"This is an example of a doc site built using \",(0,o.jsx)(e.a,{href:\"/docs/documentation/contentlayer\",children:\"ContentLayer\"}),\" and MDX.\"]})]})}function w(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(g,t)})):g(t)}var A=w;return x(j);})();\n;return Component;"
+  },
+  "_id": "courses/index.mdx",
+  "_raw": {
+    "sourceFilePath": "courses/index.mdx",
+    "sourceFileName": "index.mdx",
+    "sourceFileDir": "courses",
+    "contentType": "mdx",
+    "flattenedPath": "courses"
+  },
+  "type": "Course",
+  "slug": "/courses",
+  "slugAsParams": ""
+}

@@ -20,24 +20,20 @@ This project is an open source project for courses but the anyone can contribute
 
 ## Roadmap
 
+- [x] ~Content Layer Setup~
+- [ ] MDX components
 - [ ] Next Auth
 - [ ] Prisma Setup
-- [ ] Content Layer Setup
-- [ ] Courses Page
-- [ ] Individual Course Page
-- [ ] Support Using Stripe and BMC
+- [ ] Stripe Integration
 - [ ] Blogs
-
-## Known Issues
-
-A list of things not working right now:
+- [ ]
 
 ## Running Locally
 
 1. Install dependencies using pnpm:
 
 ```sh
-pnpm install
+yarn
 ```
 
 2. Copy `.env.example` to `.env.local` and update the variables.
@@ -49,5 +45,5 @@ cp .env.example .env.local
 3. Start the development server:
 
 ```sh
-pnpm dev
+yarn dev
 ```

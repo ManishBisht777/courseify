@@ -1,26 +1,23 @@
-import { allCourses } from "@/.contentlayer/generated";
-import { notFound } from "next/navigation";
+"use client";
+
+import { allCourses } from "@/.contentlayer/generated/index.mjs";
+import { Mdx } from "@/components/markdown/mdx-components";
+import { notFound, usePathname } from "next/navigation";
 import React from "react";
 
-interface CoursePageProps {
-  params: {
-    slug: string[];
-  };
-}
+interface CoursePageProps {}
 
-async function getDocFromParams(params: any) {
-  const slug = params.slug?.join("/") || "";
-  const course = allCourses.find((course) => course.slugAsParams === slug);
-
+async function getDocFromParams(slug: any) {
+  const course = allCourses.find((course) => course.slug === slug);
   if (!course) {
     null;
   }
-
   return course;
 }
 
-const CoursePage = async ({ params }: CoursePageProps) => {
-  const course = await getDocFromParams(params);
+const CoursePage = async ({}: CoursePageProps) => {
+  const pathName = usePathname();
+  const course = await getDocFromParams(pathName);
 
   if (!course) {
     notFound();
@@ -28,9 +25,11 @@ const CoursePage = async ({ params }: CoursePageProps) => {
 
   return (
     <div>
+      <h1>Todo: add multiple files to test </h1>
       Docs page
       <h1>{course.title}</h1>
       <p>{course.description}</p>
+      <Mdx code={course.body.code} />
     </div>
   );
 };

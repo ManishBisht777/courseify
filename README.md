@@ -26,7 +26,6 @@ This project is an open source project for courses but the anyone can contribute
 - [ ] Prisma Setup
 - [ ] Stripe Integration
 - [ ] Blogs
-- [ ]
 
 ## Running Locally
 

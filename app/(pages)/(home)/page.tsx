@@ -125,7 +125,7 @@ export default function Home() {
             The code is available on{" "}
             <div className="flex gap-4 mt-3 justify-center">
               <Link href="/auth/login" className={cn(buttonVariants(), "px-4")}>
-                <Icons.star className="mr-2 w-4" />
+                <Icons.star className="mr-2 w-4 " />
                 Github Stars
               </Link>
               <Link

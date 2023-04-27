@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "preview": "next build && next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -14,7 +15,6 @@
     "@types/react": "18.0.38",
     "@types/react-dom": "18.0.11",
     "add": "^2.0.6",
-    "autoprefixer": "^10.4.14",
     "class-variance-authority": "^0.5.2",
     "clsx": "^1.2.1",
     "contentlayer": "^0.3.2",
@@ -23,18 +23,21 @@
     "lucide-react": "^0.179.0",
     "next": "13.3.1",
     "next-contentlayer": "^0.3.2",
-    "postcss": "^8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "shadcn-ui": "^0.1.1",
+    "shiki": "^0.14.1",
+    "tailwind-merge": "^1.12.0",
+    "toast": "^0.5.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-pretty-code": "^0.9.5",
     "rehype-slug": "^5.1.0",
     "remark-gfm": "^3.0.1",
-    "shadcn-ui": "^0.1.1",
-    "shiki": "^0.14.1",
-    "tailwind-merge": "^1.12.0",
     "tailwindcss": "^3.3.2",
-    "toast": "^0.5.4",
     "typescript": "5.0.4"
   }
 }

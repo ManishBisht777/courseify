@@ -1,28 +1,47 @@
 ---
-title: Courses Page
-description: list of courses
+title: Courses
+description: Welcome to the Courseify courses.
 image: https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F9%2F99%2FUnofficial_JavaScript_logo_2.svg%2F512px-Unofficial_JavaScript_logo_2.svg.png&tbnid=vvy2E4gO7jtv2M&vet=12ahUKEwjRqryG9cf-AhUHJrcAHVTWDegQMygCegUIARDmAQ..i&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AUnofficial_JavaScript_logo_2.svg&docid=GB1wmVpYYA5T0M&w=512&h=512&q=javascript&ved=2ahUKEwjRqryG9cf-AhUHJrcAHVTWDegQMygCegUIARDmAQ
 ---
 
-## List of Courses Below
+This is the courses page for the Courseify site.
 
-Select a Course you want to follow.
+This page site built using [ContentLayer](/docs/documentation/contentlayer) and MDX.
+
+<Callout>
+
+This site is a work in progress. If you see dummy text on a page, it means it is in progress. However you can raise a issue on [@github](https://github.com/ManishBisht777/courseify) if you want to work on that.
+
+</Callout>
+
+## Courses
+
+Select a course below to learn more about it.
 
 <div className="grid sm:grid-cols-2 gap-4 mt-6">
+    <Card href="/courses/js">
+        <Image
+        src="/images/pic1.svg"
+        width="350"
+        height="200"
+        alt="Image"
+        />
 
-    <Card href="/courses/js-zero-to-hero">
-
-        ### Documentation
-
-        This documentation site built using Contentlayer.
-
+        ### Javascript
+        Curated Javascript Topics and Resources
     </Card>
 
-    <Card href="/courses/css-noob-to-pro" disabled>
+    <Card href="/courses/css" disabled>
+    <Image
+        src="/images/pic4.svg"
+        width="350"
+        height="200"
+        alt="Image"
+        />
 
-    ### Marketing
+    ### Css
 
-    The marketing site with landing pages.
+Css made easy with this Guide
 
     </Card>
 

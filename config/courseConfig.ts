@@ -26,30 +26,20 @@ export const courseConfig: CourseConfig = {
       items: [
         {
           title: "Introduction",
-          href: "/courses/js-zero-to-hero",
+          href: "/courses/js",
         },
         {
           title: "Basics",
-          href: "/courses/js-zero-to-hero/basics",
+          href: "/courses/js/basics",
         },
         {
-          title: "Components",
-          href: "/docs/documentation/components",
+          title: "Intermediate",
+          href: "/courses/js/basics",
           disabled: true,
         },
         {
-          title: "Code Blocks",
-          href: "/docs/documentation/code-blocks",
-          disabled: true,
-        },
-        {
-          title: "Style Guide",
-          href: "/docs/documentation/style-guide",
-          disabled: true,
-        },
-        {
-          title: "Search",
-          href: "/docs/in-progress",
+          title: "Advance",
+          href: "/courses/js/basics",
           disabled: true,
         },
       ],

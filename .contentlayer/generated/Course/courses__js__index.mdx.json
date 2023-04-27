@@ -1,0 +1,21 @@
+{
+  "title": "zero to hero page",
+  "description": "Welcome to the Taxonomy documentation.",
+  "published": true,
+  "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F9%2F99%2FUnofficial_JavaScript_logo_2.svg%2F512px-Unofficial_JavaScript_logo_2.svg.png&tbnid=vvy2E4gO7jtv2M&vet=12ahUKEwjRqryG9cf-AhUHJrcAHVTWDegQMygCegUIARDmAQ..i&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AUnofficial_JavaScript_logo_2.svg&docid=GB1wmVpYYA5T0M&w=512&h=512&q=javascript&ved=2ahUKEwjRqryG9cf-AhUHJrcAHVTWDegQMygCegUIARDmAQ",
+  "body": {
+    "raw": "\njs Zero to hero index page\n",
+    "code": "var Component=(()=>{var p=Object.create;var n=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var d=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,h=Object.prototype.hasOwnProperty;var F=(o,t)=>()=>(t||o((t={exports:{}}).exports,t),t.exports),_=(o,t)=>{for(var e in t)n(o,e,{get:t[e],enumerable:!0})},a=(o,t,e,c)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let i of d(t))!h.call(o,i)&&i!==e&&n(o,i,{get:()=>t[i],enumerable:!(c=l(t,i))||c.enumerable});return o};var u=(o,t,e)=>(e=o!=null?p(f(o)):{},a(t||!o||!o.__esModule?n(e,\"default\",{value:o,enumerable:!0}):e,o)),v=o=>a(n({},\"__esModule\",{value:!0}),o);var m=F((y,g)=>{g.exports=_jsx_runtime});var x={};_(x,{default:()=>j,frontmatter:()=>w});var r=u(m()),w={title:\"zero to hero page\",description:\"Welcome to the Taxonomy documentation.\",image:\"https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F9%2F99%2FUnofficial_JavaScript_logo_2.svg%2F512px-Unofficial_JavaScript_logo_2.svg.png&tbnid=vvy2E4gO7jtv2M&vet=12ahUKEwjRqryG9cf-AhUHJrcAHVTWDegQMygCegUIARDmAQ..i&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AUnofficial_JavaScript_logo_2.svg&docid=GB1wmVpYYA5T0M&w=512&h=512&q=javascript&ved=2ahUKEwjRqryG9cf-AhUHJrcAHVTWDegQMygCegUIARDmAQ\"};function s(o){let t=Object.assign({p:\"p\"},o.components);return(0,r.jsx)(t.p,{children:\"js Zero to hero index page\"})}function A(o={}){let{wrapper:t}=o.components||{};return t?(0,r.jsx)(t,Object.assign({},o,{children:(0,r.jsx)(s,o)})):s(o)}var j=A;return v(x);})();\n;return Component;"
+  },
+  "_id": "courses/js/index.mdx",
+  "_raw": {
+    "sourceFilePath": "courses/js/index.mdx",
+    "sourceFileName": "index.mdx",
+    "sourceFileDir": "courses/js",
+    "contentType": "mdx",
+    "flattenedPath": "courses/js"
+  },
+  "type": "Course",
+  "slug": "/courses/js",
+  "slugAsParams": "js"
+}

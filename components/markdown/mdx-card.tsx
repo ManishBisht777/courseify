@@ -17,7 +17,7 @@ export function MdxCard({
   return (
     <div
       className={cn(
-        "group relative rounded-lg border p-6 shadow-md transition-shadow hover:shadow-lg",
+        "group relative rounded-lg border p-6 shadow transition-shadow hover:shadow-md",
         disabled && "cursor-not-allowed opacity-60",
         className
       )}
@@ -28,6 +28,11 @@ export function MdxCard({
           {children}
         </div>
       </div>
+      {disabled && (
+        <div className="absolute top-0 right-0 px-2 py-1 text-xs bg-slate-900 text-white">
+          In Progress
+        </div>
+      )}
       {href && (
         <Link href={disabled ? "#" : href} className="absolute inset-0">
           <span className="sr-only">View</span>

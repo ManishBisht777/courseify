@@ -1,6 +1,7 @@
 "use client";
 
-import { allCourses } from "@/.contentlayer/generated/index.mjs";
+import { allCourses } from "@/.contentlayer/generated";
+import CourseHeader from "@/components/course-header";
 import { Mdx } from "@/components/markdown/mdx-components";
 import { notFound, usePathname } from "next/navigation";
 import React from "react";
@@ -24,13 +25,20 @@ const CoursePage = async ({}: CoursePageProps) => {
   }
 
   return (
-    <div>
-      <h1>Todo: add multiple files to test </h1>
-      Docs page
-      <h1>{course.title}</h1>
-      <p>{course.description}</p>
-      <Mdx code={course.body.code} />
-    </div>
+    <main className="relative py-6 lg:gap-10 lg:py-10 xl:grid xl:grid-cols-[1fr_300px]">
+      <div className="mx-auto w-full min-w-0">
+        <CourseHeader title={course.title} text={course.description} />
+        <Mdx code={course.body.code} />
+        <hr className="my-4 md:my-6" />
+        {/* <DocsPager doc={doc} /> */}
+      </div>
+      <div className="hidden text-sm xl:block">
+        <div className="sticky top-16 -mt-10 max-h-[calc(var(--vh)-4rem)] overflow-y-auto pt-10">
+          {/* <DashboardTableOfContents toc={toc} /> */}
+          table of contents
+        </div>
+      </div>
+    </main>
   );
 };
 

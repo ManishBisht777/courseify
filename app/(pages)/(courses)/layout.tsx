@@ -1,6 +1,7 @@
 import { Icons } from "@/components/Icons";
 import { Footer } from "@/components/layout/Footer";
 import MainNav from "@/components/layout/MainNav";
+import { DocsSearch } from "@/components/search";
 import { courseConfig } from "@/config/courseConfig";
 import Link from "next/link";
 import React from "react";
@@ -19,8 +20,7 @@ const CourseRootLayout = ({ children }: CourseRootLayoutProps) => {
           {/* </MainNav> */}
           <div className="flex flex-1 items-center space-x-4 sm:justify-end">
             <div className="flex-1 sm:grow-0">
-              {/* <DocsSearch /> */}
-              Search
+              <DocsSearch />
             </div>
             <nav className="flex space-x-4">
               <Link href="/" target="_blank" rel="noreferrer">

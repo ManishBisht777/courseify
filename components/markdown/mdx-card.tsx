@@ -28,11 +28,6 @@ export function MdxCard({
           {children}
         </div>
       </div>
-      {disabled && (
-        <div className="absolute top-0 right-0 px-2 py-1 text-xs bg-slate-900 text-white">
-          In Progress
-        </div>
-      )}
       {href && (
         <Link href={disabled ? "#" : href} className="absolute inset-0">
           <span className="sr-only">View</span>

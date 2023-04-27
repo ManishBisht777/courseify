@@ -16,7 +16,6 @@ export type Course = {
   title: string
   description?: string | undefined
   published: boolean
-  image: string
   /** MDX file body */
   body: MDX
   slug: string

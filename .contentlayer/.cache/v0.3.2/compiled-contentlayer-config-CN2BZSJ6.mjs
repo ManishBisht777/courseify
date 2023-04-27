@@ -29,10 +29,6 @@ var Course = defineDocumentType(() => ({
     published: {
       type: "boolean",
       default: true
-    },
-    image: {
-      type: "string",
-      required: true
     }
   },
   computedFields
@@ -77,4 +73,4 @@ export {
   Course,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-ZW6LBW7H.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-CN2BZSJ6.mjs.map

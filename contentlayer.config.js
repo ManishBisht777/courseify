@@ -32,10 +32,6 @@ export const Course = defineDocumentType(() => ({
       type: "boolean",
       default: true,
     },
-    image: {
-      type: "string",
-      required: true,
-    },
   },
   computedFields,
 }));

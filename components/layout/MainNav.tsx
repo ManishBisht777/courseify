@@ -53,7 +53,7 @@ const MainNav = ({ items, children }: MainNavProps) => {
         <span className="font-bold">Menu</span>
       </button>
       {showMobileMenu && items && (
-        <MobileNav items={items} children={children} />
+        <MobileNav items={items}>{children}</MobileNav>
       )}
     </div>
   );

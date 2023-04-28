@@ -8,7 +8,11 @@ An open source application built using the Nextjs 13
 
 ## About this project
 
-This project is an open source project for courses but the anyone can contribute to the courses
+This project is an open source project for courses but anyone can contribute to the courses.
+
+## Technologies used
+- Next Js
+- TypeScript
 
 ## Note on Performance
 
@@ -18,14 +22,6 @@ This project is an open source project for courses but the anyone can contribute
 
 > If you see something broken, you can raise a issue
 
-## Roadmap
-
-- [x] ~Content Layer Setup~
-- [ ] MDX components
-- [ ] Next Auth
-- [ ] Prisma Setup
-- [ ] Stripe Integration
-- [ ] Blogs
 
 ## Running Locally
 

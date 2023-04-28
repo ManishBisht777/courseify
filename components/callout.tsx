@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 interface CalloutProps {
   icon?: string;
   children?: React.ReactNode;
-  type?: "default" | "warning" | "danger" | "info";
+  type?: "default" | "warning" | "danger" | "info" | "calm";
 }
 
 export function Callout({
@@ -18,6 +18,7 @@ export function Callout({
         "border-red-900 bg-red-50": type === "danger",
         "border-yellow-900 bg-yellow-50": type === "warning",
         "border-green-900 bg-green-50": type === "info",
+        "border-sky-900 bg-sky-50":type === "calm",
       })}
       {...props}
     >

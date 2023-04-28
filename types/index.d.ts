@@ -32,3 +32,9 @@ export type CourseConfig = {
   mainNav: MainNavItem[];
   sidebarNav: SidebarNavItem[];
 };
+
+
+export type DcosConfig={
+  mainNav:MainNavItem[];
+  sidebarNav:SidebarNavItem[];
+}

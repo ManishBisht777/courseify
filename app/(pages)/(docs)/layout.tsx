@@ -2,20 +2,20 @@ import { Icons } from "@/components/Icons";
 import { Footer } from "@/components/layout/Footer";
 import MainNav from "@/components/layout/MainNav";
 import { DocsSearch } from "@/components/search";
-import { courseConfig } from "@/config/course";
+import { docsConfig } from "@/config/docs";
 import Link from "next/link";
 import React from "react";
 
-interface CourseRootLayoutProps {
+interface DocsLayoutProps {
   children: React.ReactNode;
 }
 
-const CourseRootLayout = ({ children }: CourseRootLayoutProps) => {
+const DocsLayout = ({ children }: DocsLayoutProps) => {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-40 w-full border-b bg-background">
         <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
-          <MainNav items={courseConfig.mainNav} />
+          <MainNav items={docsConfig.mainNav} />
           {/* <DocsSidebarNav items={docsConfig.sidebarNav} /> */}
           {/* </MainNav> */}
           <div className="flex flex-1 items-center space-x-4 sm:justify-end">
@@ -37,4 +37,4 @@ const CourseRootLayout = ({ children }: CourseRootLayoutProps) => {
   );
 };
 
-export default CourseRootLayout;
+export default DocsLayout;

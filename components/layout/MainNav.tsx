@@ -10,9 +10,10 @@ import MobileNav from "./MobileNav";
 
 interface MainNavProps {
   items?: NavItem[];
+  children?: React.ReactNode;
 }
 
-const MainNav = ({ items }: MainNavProps) => {
+const MainNav = ({ items, children }: MainNavProps) => {
   const segment = useSelectedLayoutSegment();
   const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
 
@@ -51,7 +52,9 @@ const MainNav = ({ items }: MainNavProps) => {
         {showMobileMenu ? <Icons.close /> : <Icons.logo />}
         <span className="font-bold">Menu</span>
       </button>
-      {showMobileMenu && items && <MobileNav items={items} />}
+      {showMobileMenu && items && (
+        <MobileNav items={items} children={children} />
+      )}
     </div>
   );
 };

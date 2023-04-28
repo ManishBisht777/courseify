@@ -11,7 +11,7 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
           <p className="text-center text-sm leading-loose md:text-left">
             Built by{" "}
             <a
-              href="/"
+              href="https://twitter.com/manishbisht9711"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
@@ -20,7 +20,7 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
             </a>{" "}
             Inspired By{" "}
             <a
-              href="/"
+              href="https://github.com/shadcn/taxonomy"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
@@ -47,7 +47,7 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
             </a>
             . The source code is available on{" "}
             <a
-              href="/"
+              href="https://github.com/ManishBisht777/courseify"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"

@@ -3,22 +3,36 @@
 import { allCourses } from "@/.contentlayer/generated";
 import CourseHeader from "@/components/course-header";
 import { Mdx } from "@/components/markdown/mdx-components";
-import { notFound, usePathname } from "next/navigation";
+import { notFound } from "next/navigation";
 import React from "react";
 
-interface CoursePageProps {}
+interface CoursePageProps {
+  params: {
+    slug: string[];
+  };
+}
 
-async function getDocFromParams(slug: any) {
-  const course = allCourses.find((course) => course.slug === slug);
+async function getDocFromParams(params: any) {
+  const slug = params.slug?.join("/") || "";
+  const course = allCourses.find((course) => course.slugAsParams === slug);
+
   if (!course) {
     null;
   }
+
   return course;
 }
 
-const CoursePage = async ({}: CoursePageProps) => {
-  const pathName = usePathname();
-  const course = await getDocFromParams(pathName);
+export async function generateStaticParams(): Promise<
+  CoursePageProps["params"][]
+> {
+  return allCourses.map((course) => ({
+    slug: course.slugAsParams.split("/"),
+  }));
+}
+
+const CoursePage = async ({ params }: CoursePageProps) => {
+  const course = await getDocFromParams(params);
 
   if (!course) {
     notFound();

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import hero from "../../../public/images/home.svg";
 
+
 export default function Home() {
   return (
     <>
@@ -19,7 +20,7 @@ export default function Home() {
             pn various topics and resources as well to learn them in depth.
           </p>
           <div className="mt-3 flex gap-4">
-            <Link href="/auth/docs" className={cn(buttonVariants(), "px-4")}>
+            <Link href="docs" className={cn(buttonVariants(), "px-4")}>
               Get Started
             </Link>
             <Link

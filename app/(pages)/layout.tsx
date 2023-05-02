@@ -10,7 +10,7 @@ const fontSans = FontSans({
 });
 
 export const metadata = {
-  title: "Crouseify",
+  title: "Courseify",
   description: "Share your Knowledge in Public",
 };
 

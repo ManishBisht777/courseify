@@ -1,24 +1,36 @@
-"use client";
-
 import { allDocs } from "@/.contentlayer/generated";
 import CourseHeader from "@/components/course-header";
 import { Mdx } from "@/components/markdown/mdx-components";
 import { notFound, usePathname } from "next/navigation";
 import React from "react";
 
-interface CoursePageProps {}
+interface CoursePageProps {
+  params: {
+    slug: string[];
+  };
+}
 
-async function getDocFromParams(slug: any) {
-  const doc = allDocs.find((doc) => doc.slug === slug);
+async function getDocFromParams(params: any) {
+  const slug = params.slug?.join("/") || "";
+  const doc = allDocs.find((doc) => doc.slugAsParams === slug);
+
   if (!doc) {
     null;
   }
+
   return doc;
 }
 
-const CoursePage = async ({}: CoursePageProps) => {
-  const pathName = usePathname();
-  const doc = await getDocFromParams(pathName);
+export async function generateStaticParams(): Promise<
+  CoursePageProps["params"][]
+> {
+  return allDocs.map((doc) => ({
+    slug: doc.slugAsParams.split("/"),
+  }));
+}
+
+const CoursePage = async ({ params }: CoursePageProps) => {
+  const doc = await getDocFromParams(params);
 
   if (!doc) {
     notFound();

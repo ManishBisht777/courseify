@@ -1,5 +1,3 @@
-"use client";
-
 import { allCourses } from "@/.contentlayer/generated";
 import CourseHeader from "@/components/course-header";
 import { Mdx } from "@/components/markdown/mdx-components";

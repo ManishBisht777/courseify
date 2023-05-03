@@ -25,20 +25,20 @@ This project is an open source project for courses but anyone can contribute to 
 
 ## Running Locally
 
-1. Install dependencies using pnpm:
+1. Install dependencies using yarn:
 
 ```sh
 yarn
 ```
 
-2. Copy `.env.example` to `.env.local` and update the variables.
-
-```sh
-cp .env.example .env.local
-```
-
-3. Start the development server:
+2. Start the development server:
 
 ```sh
 yarn dev
+```
+
+3. Before making a pull request run:
+
+```sh
+yarn preview
 ```

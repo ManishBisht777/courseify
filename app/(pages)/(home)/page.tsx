@@ -149,7 +149,7 @@ export default function Home() {
                 href="/"
                 // target="_blank"
                 // rel="noreferrer"
-                className={cn(buttonVariants(), "px-4 justify-content-center")}
+                className={cn(buttonVariants(), "px-4")}
                 style={{ display: "none" }}
               >
                 <svg

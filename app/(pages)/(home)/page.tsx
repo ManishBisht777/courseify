@@ -147,10 +147,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/"
-                // target="_blank"
-                // rel="noreferrer"
-                className={cn(buttonVariants(), "px-4")}
-                style={{ display: "none" }}
+                className={cn(buttonVariants(), "px-4 hidden")}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

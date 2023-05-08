@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import hero from "../../../public/images/home.svg";
 
-
 export default function Home() {
   return (
     <>
@@ -148,9 +147,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/"
-                // target="_blank"
-                // rel="noreferrer"
-                className={cn(buttonVariants(), "px-4")}
+                className={cn(buttonVariants(), "px-4 hidden")}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

@@ -5,14 +5,17 @@ export const navbarConfig: NavbarConfig = {
     {
       title: "Features",
       href: "/#features",
+     
     },
     {
       title: "Support",
       href: "/support",
+      disabled,
     },
     {
       title: "Blog",
       href: "/blog",
+      disabled,
     },
     {
       title: "Courses",

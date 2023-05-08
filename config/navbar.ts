@@ -10,12 +10,12 @@ export const navbarConfig: NavbarConfig = {
     {
       title: "Support",
       href: "/support",
-      disabled,
+      disabled: true,
     },
     {
       title: "Blog",
       href: "/blog",
-      disabled,
+      disabled: true,
     },
     {
       title: "Courses",

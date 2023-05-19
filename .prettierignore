@@ -5,5 +5,6 @@ yarn.lock
 package-lock.json
 public
 content
+.contentlayer
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md

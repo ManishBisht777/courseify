@@ -32,7 +32,9 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "eslint-config-prettier": "8.8.0",
     "postcss": "^8.4.23",
+    "prettier": "2.8.8",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-pretty-code": "^0.9.5",
     "rehype-slug": "^5.1.0",

@@ -1,22 +1,12 @@
-import { Icons } from "@/components/Icons";
-
-export type NavItem = {
+export interface NavItem {
   title: string;
   href: string;
   disabled?: boolean;
-};
-
-export type MainNavItem = NavItem;
-
-export type NavbarConfig = {
-  mainNav: MainNavItem[];
-};
+}
 
 export type SidebarNavItem = {
   title: string;
   disabled?: boolean;
-  external?: boolean;
-  icon?: keyof typeof Icons;
 } & (
   | {
       href: string;
@@ -24,17 +14,26 @@ export type SidebarNavItem = {
     }
   | {
       href?: string;
-      items: NavLink[];
+      items: NavItem[];
     }
 );
 
-export type CourseConfig = {
-  mainNav: MainNavItem[];
-  sidebarNav: SidebarNavItem[];
+export type SidebarNav = {
+  title: string;
+} & (
+  | {
+      href: string;
+      items: never;
+    }
+  | {
+      href?: string;
+      items: SidebarNavItem[];
+    }
+);
+
+export type DocsConfig = {
+  mainNav: NavItem[];
+  sidebarNav: SidebarNav[];
 };
 
-
-export type DcosConfig={
-  mainNav:MainNavItem[];
-  sidebarNav:SidebarNavItem[];
-}
+export type documentationConfig = SidebarNavItem[];

@@ -14,7 +14,7 @@ export const navConfig: NavItem[] = [
     href: "#features",
   },
   {
-    title: "join",
+    title: "contribute",
     href: "#join",
   },
 ];

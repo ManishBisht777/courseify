@@ -31,9 +31,13 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
               {item.items.map((item) => (
                 <>
                   {item.href ? (
-                    <DocsSidebarNavItem item={item} pathname={pathname} />
+                    <DocsSidebarNavItem
+                      key={item.title}
+                      item={item}
+                      pathname={pathname}
+                    />
                   ) : (
-                    <Accordion type="single" collapsible>
+                    <Accordion key={item.title} type="single" collapsible>
                       <AccordionItem className="border-b-0" value="item-1">
                         <div className="flex justify-between items-center">
                           <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-medium">

@@ -31,7 +31,7 @@ export type SidebarNav = {
     }
 );
 
-export type DocsConfig = {
+export type PrepConfig = {
   mainNav: NavItem[];
   sidebarNav: SidebarNav[];
 };
